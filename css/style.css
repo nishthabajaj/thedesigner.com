@@ -1,0 +1,126 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kotta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kotta+One&family=Rancho&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.profile-menu { 
+  .dropdown-menu{
+    right: 0;
+    left: unset;
+  }
+  .fa-fw{
+    margin-right: 10px;
+  }  
+}
+.toggle-change{
+    &::after {
+    border-top: 0;
+    border-bottom: .3em solid;
+    }
+} 
+
+/*header*/
+header .mynavi{padding:0;background:#fff;}
+/*.mynavi a,.mynavi a:link,.mynavi a:visited{color:#6fa8dc;font:20px/19px 'Agbalumo-Regular.ttf';}*/
+/*.mynavi .my-ul a:hover,.mynavi .my-ul a:focus,.mynavi .my-ul a:active{color:#FF5A1D}*/
+.mynavi .my-ul{width:100%;}
+.mynavi .my-ul>li{margin-right:20px;}
+.mynavi .my-ul li:last-of-type{margin-right:0px}
+.mynavi .my-ul li a, .mynavi .my-ul li a:link, .mynavi .my-ul li a:visited{color:#6fa8dc!important;font:20px/19px "Kotta One", serif;}
+.mynavi .my-ul li a:hover, .mynavi .my-ul li a:focus, .mynavi .my-ul li a:active{color:#FF5A1D}
+
+
+
+.back-one{background:url(../images/roadd.jpg) center no-repeat;background-size:cover;position:relative;padding:50px 0 50px 0;    margin-top: 85px;}
+.back-one:before{background-color: rgba(0, 0, 0, 0.5);display:normal;}
+.back-one>.container>.row>div>.our-heading >h3{margin-bottom:40px;color:white;font:50px/60px "Volkhov", serif;}
+.our-heading >h3{margin-bottom:50px;color:white;font:50px/60px "Volkhov", serif;text-transform: uppercase;}
+.back-one>.container>.row>div>.our-heading >p{color:white;font:20px/25px "Kotta One", serif;}
+.back-one>.container>.row>div>.our-heading >p:last-of-type{margin-bottom:40px;}
+a.search-here,a.search-here:link,a.search-here:visited{margin:1rem 0 1rem 0; background:#02aae9;color:#fff; underline:none;font:20px/25px "Kotta One", serif;}
+a.search-here:active,a.search-here:hover,a.search-here:focus{background:#FF5A1D;color:#fff;}
+.back-one>.container>.row>div>.our-heading >p>span{color:#02aae9;font-weight:900}
+
+
+.history{background:url(../images/linear1.jpg) center no-repeat;background-size:cover;position:relative;padding:76px 0 90px 0;}
+.history .ganga-history {margin-top:0px;padding:0px 20px}
+.history .ganga-history p{color:white;font:20px/25px "Kotta One", serif;}
+
+
+.hangout-places{padding:86px 0;}
+.hangout-places .our-heading >h3 {color:#02aae9}
+.hp-text h1{text-align:center;color:#FF5A1D;font:40px/45px "Kotta One", serif;margin-bottom:20px}
+
+
+.ask-question{background:url(../images/star.jpg) center no-repeat;background-size:cover;position:relative;padding:76px 0 90px 0;}
+.ask-question .our-heading h3{color:}
+.ask-question #accordion .card .card-header a, .ask-question #accordion .card .card-header a:link, .ask-question #accordion .card .card-header a:visited{color:#02aae9;font:20px/25px "Kotta One", serif;border:none}
+.ask-question #accordion .card .card-header a:hover, .ask-question #accordion .card .card-header a:focus, .ask-question #accordion .card .card-header a:active{color:#FF5A1D;border:none}
+.ask-question #accordion .card .card-body p{color:#000;font:20px/25px "Kotta One", serif;}
+p{font:20px/25px "Kotta One", serif;}
+
+
+footer{background:#fff}
+footer .foot-content a,footer .foot-content a:link, footer .foot-content a:visited{color:#000;font:20px/25px "Kotta One", serif;text-decoration:none;margin-right:100px}
+footer .foot-content a:active,footer .foot-content a:hover, footer .foot-content a:focus{color:#FF5A1D;text-decoration:none;}
+footer .foot-content a:last-of-type{margin-right:0!important}
+footer .foot-content{padding-top:30px;}
+.social-icon{text-align: -webkit-right;}
+.social-icon a{margin-right:20px;}
+.social-icon a:last-of-type{margin-right:0px;}
+
+
+.back-one-section{background:url(../images/contact1.jpg) center no-repeat;background-size:cover;position:relative;padding:50px 0 50px 0;    margin-top: 85px;}
+
+.back-two-section{background:url(../images/arrows.jpg) center no-repeat;background-size:cover;position:relative;padding:164px 0 128px 0;    margin-top: 85px;}
+.back-two-section .our-heading p{color:#fff;}
+
+/** media screen **/
+@media screen and (max-width:1025px)
+{
+	
+}
+@media screen and (max-width:991px){
+ .navbar-dark .navbar-toggler-icon{background-image:url(../images/toggle.jpg)}	
+ footer .foot-content a, footer .foot-content a:link, footer .foot-content a:visited{margin-right:15px}	
+
+}
+
+@media screen and (max-width:767px){
+	.back-one>.container>.row>div>.our-heading >h3{font: 40px / 50px "Volkhov", serif;}
+	.our-heading >h3{font: 40px / 50px "Volkhov", serif;margin-bottom:30px}
+	footer .foot-content a, footer .foot-content a:link, footer .foot-content a:visited{font:16px/19px "Kotta One", serif;margin-right:0}
+	.history .ganga-history{padding:0}
+}
+@media screen and (max-width:601px){
+	.back-one>.container>.row>div>.our-heading >h3,.our-heading >h3 { font: 29px / 33px "Volkhov", serif;margin-bottom:20px    }
+    p,.back-one>.container>.row>div>.our-heading >p,.history .ganga-history p {font: 15px/20px "Kotta One", serif;}
+	a.search-here, a.search-here:link, a.search-here:visited{font:16px/25px "Kotta One", serif;margin: 0rem 0 1rem 0;}
+		.back-one{padding: 50px 0 36px 0;}
+	
+	.history {padding: 45px 0 50px 0;}
+	.hangout-places {  padding: 36px 0;}
+	.hp-text h1 {font: 29px / 33px "Kotta One", serif;}
+	.ask-question {padding: 29px 0 71px 0;}
+	.ask-question #accordion .card .card-header a, .ask-question #accordion .card .card-header a:link, .ask-question #accordion .card .card-header a:visited{font: 15px / 25px "Kotta One", serif;}
+	.ask-question #accordion .card .card-body p{font: 15px / 25px "Kotta One", serif;}
+	footer{text-align: center;}
+	.social-icon {    text-align: center;}
+	footer .foot-content {    padding-top: 8px;}
+}
+@media screen and (max-width:480px){}
+@media screen and (max-width:400px){}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
